@@ -1,0 +1,147 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+.dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation div .material-icons-outlined{
+    margin-left: 5px;
+    font-size: 30px;
+    color: black;
+}
+
+
+.dashboard .main .search form{
+    position: relative;
+}
+.dashboard .main .search{
+    margin-top: 40px;
+}
+
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+}
+.dashboard .main .search .notification{
+    margin-top: 20px;
+}
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 350px;
+    position: relative;
+}
+
+.dashboard .main .title h1{
+    line-height: 0px;
+    margin-top:40px;
+}
+
+
+
+#typewriter {
+    color: darkblue;
+    font-size: 35px;
+    margin-top: -50px;
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    #typewriter {
+        font-size: 24px; 
+        margin-top: 0; 
+        margin-left: 0; 
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    section.main .project_list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: left;
+        align-content: flex-start;
+    }
+  
+    section.secondary{
+        position: fixed;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    section.secondary{
+        display: block;
+    }
+    .dashboard .navigation{
+         width: 60px;
+         position: fixed;
+         z-index: 10; 
+    }
+
+    section.main{
+        margin-left:100px;
+    }
+   
+    section.main.project_list{
+        width: 78%;
+        
+    }
+
+    section.secondary{
+        width: 20%;
+        height:100%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        background-color:beige;
+        text-align: center;
+        margin-top:-20px;
+    }
+    .dashboard .navigation div{
+        margin-top: 19vh;
+        margin-bottom: 19vh;
+    }
+}
+
+@media only screen and (min-width: 1111px){
+    section.main .project_list{
+        width: 78%;
+    }
+   
+    
+}
+
+
